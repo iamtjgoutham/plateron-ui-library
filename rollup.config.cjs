@@ -38,7 +38,8 @@ export default [
       postcss({
         extract: false,
         modules: true,
-        use: ['scss']
+        use: ['sass'],
+        extensions: [".scss"]
      }),
 
       // minifying module
