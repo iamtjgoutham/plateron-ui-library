@@ -4,6 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
 import postcss from "rollup-plugin-postcss";
+import scss from 'rollup-plugin-scss'
 
 // minifying module
 import terser from "@rollup/plugin-terser";
@@ -35,12 +36,10 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
 
       // css
-      postcss({
-        extract: false,
-        modules: true,
-        use: ['sass'],
-        extensions: [".scss"]
-     }),
+      postcss(),
+      scss({
+        outputStyle: 'compressed'
+      }),
 
       // minifying module
       terser()
