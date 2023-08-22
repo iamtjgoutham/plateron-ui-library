@@ -1,5 +1,5 @@
 {
-  "name": "plateron-ui-library",
+  "name": "@iamtjgoutham/plateron-ui-library",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/iamtjgoutham"
   },
