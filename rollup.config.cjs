@@ -36,10 +36,10 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
 
       // css
-      postcss(),
       scss({
         outputStyle: 'compressed'
       }),
+      postcss(),
 
       // minifying module
       terser()
