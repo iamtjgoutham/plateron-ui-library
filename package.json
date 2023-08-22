@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/iamtjgoutham"
   },
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "UI Library for Plateron UI",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
@@ -40,6 +40,7 @@
     "jest": "29.6.2",
     "jest-environment-jsdom": "29.6.2",
     "node-sass": "^9.0.0",
+    "postcss-scss": "^4.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rollup": "3.28.0",

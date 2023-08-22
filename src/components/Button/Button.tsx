@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ButtonInterface } from './button.interface';
 
-import './button.scss';
+import styles from './button.module.scss';
 
 const Button = ({
   primary = false,
@@ -12,7 +12,7 @@ const Button = ({
   disabled = false,
   ...props
 }: ButtonInterface) => {
-  const mode = primary ? 'ui-button--primary' : 'ui-button--secondary';
+  const mode = primary ? styles['ui-button--primary'] : styles['ui-button--secondary'];
   return (
     <button
       type="button"
