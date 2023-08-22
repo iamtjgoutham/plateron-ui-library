@@ -52,6 +52,6 @@ export default [
     plugins: [dts.default()],
 
     // css config
-    external: [/\.scss$/],
+    external: [/\.(css|less|scss)$/],
   },
 ];
