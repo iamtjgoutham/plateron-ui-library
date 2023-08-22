@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/iamtjgoutham"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "UI Library for Plateron UI",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",

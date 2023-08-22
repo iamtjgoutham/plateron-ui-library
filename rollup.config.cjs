@@ -4,8 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
 import postcss from "rollup-plugin-postcss";
-import sassPlugin from 'rollup-plugin-sass'
-import sass from 'sass'
+import scss from 'rollup-plugin-scss'
 
 // minifying module
 import terser from "@rollup/plugin-terser";
@@ -38,8 +37,10 @@ export default [
 
       // css
       postcss(), 
-      sassPlugin({
-        runtime: sass
+      scss({
+        output: "./build/css/style.css",
+        failOnError: true,
+        runtime: require("sass"),
       }),
 
       // minifying module
